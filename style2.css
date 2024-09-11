@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0 3%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  background: linear-gradient(180deg, #3e6068 0%, rgba(0, 13, 18, 0.8) 100%);
+  color: #ffffff;
+}
+
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+  background-size: cover;
+  background-position: center bottom;
+  margin-left: 10px
+}
+
+.home__title {
+  letter-spacing: 0.3em;
+  font-size: 70px;
+  text-align: center;
+  color: #0b0214;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(195, 181, 181, 0.25);
+}
+  
+.feedback__results {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px; /* Espacio en la parte inferior */
+}
+
+.feedback__results h1 {
+  margin-bottom: 20px; /* Espacio entre el título y los cuadros */
+}
+
+.feedback__content {
+  display: flex;
+  justify-content: center; /* Centra los cuadros horizontalmente */
+  gap: 60px; /* Espacio entre los cuadros */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  max-width: 1500px; /* Limita el ancho máximo del contenedor */
+  flex-wrap: wrap; /* Permite que los cuadros se ajusten si el espacio es pequeño */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+@keyframes backgroundTransition {
+  from {
+      background-color: #676767;
+  }
+  to {
+      background-color: #3860c3;
+  }
+}
+
+.feedback__content div {
+  background-color: #72c31c; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 30px; /* Espacio interno */
+  width: 48%; /* Ocupa el 45% del ancho total */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  color: #f2f0f0; /* Color del texto */
+  border: 1px solid #e0e0e0; /* Borde delgado */
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  animation: backgroundTransition 3s infinite alternate;
+}
+
+.feedback__content div:hover {
+  transform: scale(1.07); /* Escala ligera en hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Intensifica sombra en hover */
+}
+
+.feedback__results .email {
+  border: 2px solid #080808; /* Borde ligero */
+}
+
+.feedback__results .comments {
+  border: 2px solid #080808; /* Borde ligero */
+}
+
+
